@@ -1,0 +1,144 @@
+body    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 0;
+    background-color: bisque;
+}
+.row    {
+    margin-top: 1%;
+}
+#equal  {
+    min-width: 145px;
+}
+
+.container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; 
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.display    {
+    background-color: #fbeee0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: #422800;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #422800;
+}
+
+.inner-container    {
+    background-color: rgb(255, 234, 178);
+    padding: 2rem 1rem;
+    border-radius: 5%;
+    box-shadow: 10px 10px;
+    border: 2px solid #422800;
+}
+
+.one {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.row button {
+  margin: 1px;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 2px 2px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.row button:hover {
+  background-color: #fff;
+}
+
+.row button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .row button {
+    min-width: 70px;
+    padding: 0 25px;
+  }
+}
+
+
+
+.Btn {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+  }
+  
+  .svgIcon {
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+  }
